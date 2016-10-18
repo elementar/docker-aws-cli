@@ -1,0 +1,7 @@
+add-to-elb:
+  image: elementar/register-ec2-with-elb
+  autodestroy: on_success
+  deployment_strategy: every_node
+  environment:
+    AWS_DEFAULT_REGION: us-east-1
+    LOAD_BALANCER_NAME: my-load-balancer
